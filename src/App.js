@@ -8,6 +8,8 @@ import DeleteIcon from './DeleteIcon';
 import { useState } from 'react';
 import styles from "./styles.module.css";
 import Thuc_hanh_3 from './Thuc_hanh_3';
+import Thuc_hanh_4 from './Thuc_hanh_4';
+
 
 function App() {
   const [numClicked, setNumClicked] = useState(0);
@@ -47,9 +49,11 @@ function App() {
 
         <div>
           <div>THỰC HÀNH 2</div>
+          
           <div>CSS Modules</div>
           <button onClick={handleClick}>Click here</button>
           <h2 className={textStyle}>You clicked {numClicked} times</h2>
+
           <div>CSS Inline</div>
           <h2 
             style={{
@@ -59,7 +63,7 @@ function App() {
           </h2>
 
           <div>Styled-Components</div>
-          <button onClick={handleClick}>Click here</button>
+          {/* <button onClick={handleClick}>Click here</button> */}
           {/* <StyledText numClicked={numClicked}>
               You clicked {numClicked} times
           </StyledText> */}
@@ -69,6 +73,12 @@ function App() {
           <Thuc_hanh_3></Thuc_hanh_3>
 
       </div>
+
+      <div>
+        <div>THỰC HÀNH 4 : Sử dụng Tailwind CSS cho form login</div>
+          <Thuc_hanh_4></Thuc_hanh_4>
+      </div>
+      
     </div>
   );
 }
